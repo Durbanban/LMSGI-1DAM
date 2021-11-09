@@ -1,3 +1,17 @@
+body {
+    background: linear-gradient(to bottom right, lightblue, white);
+}
 h1 {
+    font-size: 6em;
+    text-shadow: 2px 2px darkgoldenrod;
+    text-align: center;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
+}
+p {
+    
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 1.5em;
+}
+a {
+    text-align: center;
 }

@@ -6,16 +6,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ejemplos cajas</title>
     <style type = "text/css">
+        * {
+            box-sizing: border-box; 
+        }
+        div {
+            width: 2000px;
+            height: 2000px;
+            background-color: blue;
+            background-image: url(./img/fondo_jovenes.png), url(./img/fondo_trama.png);
+            background-repeat: no-repeat, repeat;
+        }
         h1 {
             background-color: yellow;
             width: 50%;
             min-width: 500px;
             max-width: 1200px;
-            padding: 2%;
-            border-top: solid red 25px;
-            border-bottom: dashed green 25px;
-            border-left: groove chocolate 25px;
-            border-right: none;
+            padding: 5%;
+            border: solid red 25px;
             border-radius: 20px;
             margin: 50px auto;
             text-align: center;
@@ -23,8 +30,7 @@
         p {
             background-color: green;
             width: 75%;
-            height: 60px;
-            padding: 1%;
+            padding: 2%;
             border: solid red 5px;
             margin: 50px auto;
         }
@@ -34,5 +40,6 @@
     <h1>ESTE ES EL TÍTULO</h1>
     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus, animi cum sint eaque exercitationem cumque labore, recusandae sapiente placeat quae numquam consequuntur explicabo! Corrupti velit fugit dolore ipsum unde! Necessitatibus.</p>
     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores iusto exercitationem voluptate itaque ullam, impedit voluptates optio, distinctio aperiam sed est! Itaque voluptatem eum dolore corrupti ea dignissimos quo blanditiis.</p>    
+    <div></div>
 </body>
 </html>

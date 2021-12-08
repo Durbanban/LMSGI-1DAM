@@ -1,0 +1,19 @@
+
+h1 {
+    color: orange;
+    background-color: black;
+    text-align: center;
+    font-family: biblia;
+    font-size: 35pt;
+    height: 250px;
+    width: 1250px;
+    margin-left: 8%;
+    border-style: dashed;
+    border-radius:25px;
+    border-width: 5px;
+    padding-top: 40px;
+}
+@font-face {
+    font-family: biblia;
+    src: url(../fonts/EvilBible.ttf);
+}

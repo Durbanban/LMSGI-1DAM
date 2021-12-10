@@ -1,4 +1,11 @@
-div {
+
+
+p {
+    font-family: 'Kristen ITC', 'Berlin Sans FB', Arial;
+    text-align: center;
+    font-size: 35pt;
+    color: white;
+    font-variant: small-caps;
     width: 800px;
     height: 565px;
     padding-top: 100px;
@@ -7,13 +14,10 @@ div {
     border-width: 0px;
     border-color: white;
     border-radius: 50px;
-    background: url(../media/fondo_jovenes.png) no-repeat, 200px, 150px, url(../media/fondo_trama.png);
-}
-div p {
-    font-family: Kristen ITC, Berlin Sans FB, Arial;
-    text-align: center;
-    font-size: 35pt;
-    color: white;
-    font-variant: small-caps;
+    background-image: url(../media/fondo_jovenes.png), url(../media/fondo_trama.png);
+    background-size: 75%, cover;
+    background-repeat: no-repeat, repeat;
+    background-position: bottom;
+    box-sizing: content-box;
 
 }

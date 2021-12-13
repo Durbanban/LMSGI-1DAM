@@ -1,5 +1,21 @@
-h1 {
+#inicio {
     background-color: chocolate;
     color: whitesmoke;
+    height: 140px;
+    width: 100%;
+    font-size: 50pt;
+    text-align: center;
+    padding-top: 20px;
+
+}
+
+nav {
+    width: 40%;
+    display: flex;
+    flex-direction: row-reverse;
+    
+}
+
+nav div {
     
 }

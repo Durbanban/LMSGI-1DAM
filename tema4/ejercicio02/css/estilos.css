@@ -5,7 +5,7 @@ p {
     text-align: center;
     font-size: 35pt;
     color: white;
-    font-variant: small-caps;
+    text-transform: uppercase;
     width: 800px;
     height: 565px;
     padding-top: 100px;

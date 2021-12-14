@@ -1,0 +1,48 @@
+body {
+    background-color: darkgrey;
+}
+
+header div{
+    display: flex;
+    width: 85%;
+    height: 130px;
+    background-color: coral;
+    margin: auto;
+    align-content: space-between;
+    border-radius: 10px;
+    
+}
+
+header div p {
+    margin: auto;
+    color: white;
+    text-shadow: darkgrey 2px 2px;
+    font-size: 35pt;
+}
+
+main div{
+    width: 85%;
+    display: flex;
+    margin: auto;
+    align-content: space-between;
+}
+
+article div {
+    width: 100%;
+    margin-top: 10px;
+    flex-direction: column;
+    background-color: coral;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+aside div {
+    flex-direction: column;
+    background-color: coral;
+    margin-top: 10px;
+    border-radius: 10px;
+    padding: 5px;
+}
+aside div img {
+    width: 100%;
+}

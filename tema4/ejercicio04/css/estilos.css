@@ -2,7 +2,7 @@ body {
     background-color: darkgrey;
 }
 
-header div{
+header {
     display: flex;
     width: 85%;
     height: 130px;
@@ -13,35 +13,38 @@ header div{
     
 }
 
-header div p {
+header p {
     margin: auto;
     color: white;
     text-shadow: darkgrey 2px 2px;
     font-size: 35pt;
 }
 
-main div{
+main {
     width: 85%;
     display: flex;
     margin: auto;
-    align-content: space-between;
+    justify-content: space-between;
 }
 
-article div {
-    width: 100%;
+article {
+    flex-basis: 75%;
     margin-top: 10px;
     flex-direction: column;
     background-color: coral;
     border-radius: 10px;
     padding: 10px;
+    flex-grow: 1;
 }
 
-aside div {
+aside {
     flex-direction: column;
     background-color: coral;
     margin-top: 10px;
     border-radius: 10px;
     padding: 5px;
+    flex-basis: 25%;
+    flex-grow: 1;
 }
 aside div img {
     width: 100%;

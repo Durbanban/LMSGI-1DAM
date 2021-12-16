@@ -30,6 +30,7 @@ main {
 article {
     flex-basis: 75%;
     margin-top: 10px;
+    margin-right: 5px;
     flex-direction: column;
     background-color: coral;
     border-radius: 10px;
@@ -41,11 +42,12 @@ aside {
     flex-direction: column;
     background-color: coral;
     margin-top: 10px;
+    margin-left: 5px;
     border-radius: 10px;
     padding: 5px;
     flex-basis: 25%;
     flex-grow: 1;
 }
 aside div img {
-    width: 100%;
+    width: 95%;
 }

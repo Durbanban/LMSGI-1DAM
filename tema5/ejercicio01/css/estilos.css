@@ -7,17 +7,27 @@ nav {
 
 div#principal {
     display: flex;
-    margin: auto;
-    border-radius: 20px;
+    margin:  auto;
+    border-radius: 50px;
     width: 90%;
     height: 70%;
-    justify-content: stretch;
+    justify-content: space-between;
+    background-color: rgb(225, 225, 225);
+    
 
 }
 
 div {
     height: 80%;
     margin: auto;
-    background-color: rgba(255, 255, 255, 0.856);
+    background-color: rgb(225, 225, 225);
+    border-right: 1px black solid;
+    padding-left: 10px;
+    padding-right: 15px;
     
+}
+
+div#bordeIzq {
+    border-left: 1px black solid;
+    border-right: none;
 }

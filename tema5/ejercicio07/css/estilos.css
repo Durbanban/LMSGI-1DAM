@@ -1,0 +1,49 @@
+* {
+    box-sizing: border-box;
+}
+
+nav>ul {
+    display: flex;
+    justify-content: space-around;
+}
+
+ul ul {
+    width: 300px;
+}
+
+nav ul {
+    list-style-type: none;
+    margin-bottom: 0px;
+    padding-left: 0px;
+    
+}
+
+nav>ul li {
+    background-color: grey;
+    flex: 1 1 auto;
+    height: 60px;
+    
+}
+
+nav>ul li li {
+    height: 0px;
+    overflow: hidden;
+    border-width: 0px;
+    transition: all 0.4s;
+}
+
+nav>ul li:hover li {
+    height: 60px;
+    border-width: 2px;
+    border-style: solid;
+}
+
+nav>ul>li {
+    height: 60px;
+    padding-top: 20px;
+}
+
+li:hover ul {
+    padding-top: 20px;
+
+}

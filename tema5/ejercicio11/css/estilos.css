@@ -2,17 +2,17 @@
     box-sizing: border-box;
 }
 
-@keyframes animaReloj{
-    from{
+@keyframes animaReloj {
+    from {
         transform: rotate(0);
     }
 
-    to{
+    to {
         transform: rotate(360deg);
     }
 }
 
-.reloj{
+.reloj {
     width: 500px;
     height: 500px;
     margin: 0 auto;
@@ -22,7 +22,7 @@
     background-color: grey;
 }
 
-.reloj > div{
+.reloj > div {
     position: absolute;
     top: 0;
     right: 0;
@@ -32,13 +32,16 @@
 }
 
 
-.cajaHoras{
+.cajaHoras {
     width: 60%;
     height: 60%;
+}
+
+.cajaHoras:hover {
     animation: run 43200s infinite;
 }
 
-.horas{
+.horas {
     width: 10px;
     height: 50%;
     margin: 0 auto;
@@ -46,13 +49,16 @@
 }
 
 
-.cajaMinutos{
+.cajaMinutos {
     height: 80%;
     width: 80%;
+}
+
+.cajaMinutos:hover {
     animation: animaReloj 3600s infinite;
 }
 
-.minutos{
+.minutos {
     height: 50%;
     width: 6px;
     background-color: black;
@@ -60,13 +66,17 @@
 }
 
 
-.cajaSegundos{
+.cajaSegundos {
     width: 95%;
     height: 95%;
-    animation: animaReloj 60s infinite;
 }
 
-.segundos{
+.cajaSegundos:hover {
+    animation: animaReloj 60s infinite;
+
+}
+
+.segundos {
     width: 3px;
     height: 50%;
     background-color: red;

@@ -38,14 +38,15 @@ nav>ul li:hover li {
     height: 60px;
     border-width: 2px;
     border-style: solid;
+    margin-top: 0;
 }
 
 nav>ul>li {
     height: 60px;
-    padding-top: 20px;
+    padding-top: 10px;
 }
 
 li:hover ul {
-    padding-top: 20px;
+    padding-top: 16px;
 
 }

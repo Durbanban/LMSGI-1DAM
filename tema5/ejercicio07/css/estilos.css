@@ -20,6 +20,8 @@ nav ul {
 
 nav>ul li {
     background-color: grey;
+    border-width: 5px;
+    border-color: crimson;
     flex: 1 1 auto;
     height: 60px;
     

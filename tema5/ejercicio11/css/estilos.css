@@ -35,10 +35,11 @@
 .cajaHoras {
     width: 60%;
     height: 60%;
+    animation: animaReloj 43200s infinite;
 }
 
 .cajaHoras:hover {
-    animation: run 43200s infinite;
+    animation-play-state: paused;
 }
 
 .horas {
@@ -52,10 +53,11 @@
 .cajaMinutos {
     height: 80%;
     width: 80%;
+    animation: animaReloj 3600s infinite;
 }
 
 .cajaMinutos:hover {
-    animation: animaReloj 3600s infinite;
+    animation-play-state: paused;
 }
 
 .minutos {
@@ -69,11 +71,11 @@
 .cajaSegundos {
     width: 95%;
     height: 95%;
+    animation: animaReloj 60s infinite steps(60, end);
 }
 
 .cajaSegundos:hover {
-    animation: animaReloj 60s infinite;
-
+    animation-play-state: paused;
 }
 
 .segundos {

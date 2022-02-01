@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<title>PC Regalo</title>
+	<meta charset="UTF-8">
+	<style type="text/css">
+		/*ESTILOS PARA EL EJERCICIO 1*/
+       * {
+           box-sizing: border-box;
+       }
+
+       nav {
+           display: flex;
+           background-color: lightblue;
+           justify-content: space-between;
+       }
+
+       nav .wrapper {
+           display: flex;
+           align-items: flex-end;
+           
+           
+       }
+       
+       nav div.logo {
+           display: flex;
+            background-image: url(../Tema5/img/logo_ejercicio1.png);
+            width: 155px;
+            height: 100px;
+            transition: all 1s;
+       }
+
+       nav div.container {
+           display: flex;
+
+       }
+
+       nav div.logo:hover {
+            width: 393px;
+            transition: all 1s;
+       }
+
+       li {
+           font-family: Arial, Helvetica, sans-serif;
+           font-size: 16pt;
+           color: #0762f4;
+            padding: 38px 10px 35px 10px;
+            list-style-type: none;
+            margin: 0px 0px 0px 0px;
+            border: 0px;
+            width: 200px;
+            height: 98px;
+            text-align: center;
+
+       }
+
+       li:hover {
+           background-color: #023484;
+           color: white;
+       }
+
+       nav div>li#inicio {
+           position: relative;
+       }
+		
+
+		/*ESTILOS PARA LOS EJERCICIOS 2 y 3 (añade lo que necesites)*/
+		
+        footer{
+			position: fixed;
+			bottom: 0px;
+			height: 200px;
+			width: 100%;
+			background-color: lightblue;
+			display: flex;
+			align-items: flex-end;
+			flex-direction: column;
+			text-align: right;
+            background-image: linear-gradient(to right, lightblue, #023484);
+		}
+
+		footer p{
+			width: 20%;
+			font-family: "Comic Sans MS";
+			font-size: 12pt;
+			padding-right: 20px;
+		}
+
+		footer p+p{
+			background-color: #023484;
+			color: white;
+			border-radius: 15px;
+            position: relative;
+            right: -400px;
+            transition: all 1s;			
+		}
+
+        footer p:hover+p {
+           position: relative;
+           right: 0px;
+           transition: all 1s;
+           
+        }   
+
+		
+	</style>
+</head>
+<body>
+
+	<!--HTML PARA EL EJERCICIO 1. No puedes crear etiquetas nuevas, solo puedes añadir clases o ids-->
+	<nav>
+		<div class = "container">	
+			<div class = "logo"></div>
+			<li id = "inicio">INICIO</li>		
+		</div>
+		<div class = "wrapper">			
+			<li>Buscar</li>		
+			<li>Contacto</li>
+			<li>Productos</li>		
+		</div>
+	</nav>
+
+	<h1>Nombre y Apellidos</h1>
+
+	<!--HTML PARA LOS EJERCICIOS 2 y 3. No puedes modificar este código, ni siquiera para añadir clases o id-->
+	<footer>
+		<p><img src="img/iconoWhatsapp.png"></p>
+		<p>Si quieres hablar con nosotros, escríbenos un whatsapp al 666333444 o un correo a info@pcregalo.com</p>
+	</footer>
+</body>
+</html>

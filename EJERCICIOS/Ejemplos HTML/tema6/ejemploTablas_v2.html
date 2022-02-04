@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejemplo de tabla</title>
+    <style rel = "text/css">
+        
+        * {
+            box-sizing: border-box;
+        }
+        
+        table {
+            width: 500px;
+            border: 2px solid red; /* Este borde no se ve debido al collapse, hace que se mantenga el borde azul de la etiqueta td (celda) */
+            border-collapse: collapse;
+            margin: auto;
+            caption-side: bottom;
+        }
+
+        caption {
+            background-color: black;
+            color: white;
+        }
+        
+        td, th {
+            width: 150px;
+            border: 2px solid blue;
+            padding: 5px;
+            text-align: center;
+            vertical-align: middle;
+            
+        }
+
+        /*La etiqueta tr es una cuestión semántica, no vale la pena modificarla con css*/
+        tr {
+            border: 2px solid yellow;
+        }
+        /*
+        colgroup {
+            background-color: turquoise;
+        }
+
+        colgroup:nth-of-type(2) {
+            background-color: lightcoral;
+        }
+        */
+
+        @keyframes animaTabla {
+            from {
+                background-color: red;
+                
+            }
+
+            to {
+                background-color: white;
+
+            }
+        }
+
+
+        table tr:nth-child(2n) {
+            animation: animaTabla 1s infinite;
+        }
+
+        table tr:nth-child(2n+1) {
+            animation: animaTabla 1s reverse infinite;
+        }
+
+
+        
+    </style>
+</head>
+<body>
+    <!-- Todas las etiqueta de tabla son etiquetas de bloque, y por lo tanto se pueden maquetar con contenedores flex o lo que sea -->
+    <table summary = "Clasificación de canciones con puntuación">
+        <caption>Tabla 1. Clasificación de Canciones</caption>
+        <colgroup span = "1"></colgroup>
+        <colgroup span = "2"></colgroup>
+        <thead>
+            <td colspan = "3">Mis canciones favoritas</td>
+            <tr>
+                <th>Canción</td>
+                <th>Autor</td>
+                <th>Puntuación</td>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>En un mercedes blanco</td>
+                <td>Kiko Veneno</td>
+                <td>10</td>
+            </tr>
+            <tr>
+                <td>Mi gran noche</td>
+                <td>Adamo</td>
+                <td>8</td>
+            </tr>
+            <tr>
+                <td>Como una Ola</td>
+                <td>Rocío Jurado</td>
+                <td>7</td>
+            </tr>
+            <tr>
+                <td>Una de Kiko</td>
+                <td>Kiko Rivera</td>
+                <td>0</td>
+            </tr>
+            <tr>
+                <td>En un mercedes blanco</td>
+                <td>Kiko Veneno</td>
+                <td>10</td>
+            </tr>
+            <tr>
+                <td>Mi gran noche</td>
+                <td>Adamo</td>
+                <td>8</td>
+            </tr>
+            <tr>
+                <td>Como una Ola</td>
+                <td>Rocío Jurado</td>
+                <td>7</td>
+            </tr>
+            <tr>
+                <td>Una de Kiko</td>
+                <td>Kiko Rivera</td>
+                <td>0</td>
+            </tr>
+            <tr>
+                <td>En un mercedes blanco</td>
+                <td>Kiko Veneno</td>
+                <td>10</td>
+            </tr>
+            <tr>
+                <td>Mi gran noche</td>
+                <td>Adamo</td>
+                <td>8</td>
+            </tr>
+            <tr>
+                <td>Como una Ola</td>
+                <td>Rocío Jurado</td>
+                <td>7</td>
+            </tr>
+            <tr>
+                <td>Una de Kiko</td>
+                <td>Kiko Rivera</td>
+                <td>0</td>
+            </tr>
+            <tr>
+                <td>En un mercedes blanco</td>
+                <td>Kiko Veneno</td>
+                <td>10</td>
+            </tr>
+            <tr>
+                <td>Mi gran noche</td>
+                <td>Adamo</td>
+                <td>8</td>
+            </tr>
+            <tr>
+                <td>Como una Ola</td>
+                <td>Rocío Jurado</td>
+                <td>7</td>
+            </tr>
+            <tr>
+                <td>Una de Kiko</td>
+                <td>Kiko Rivera</td>
+                <td>0</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td colspan = "3">Todos los derechos reservados</td>
+            </tr>
+        </tfoot>
+    </table>
+</body>
+</html>

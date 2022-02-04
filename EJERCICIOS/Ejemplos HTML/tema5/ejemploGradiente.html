@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ejemploGradiente</title>
+    <style type = "text/css">
+        body {
+            background-color: yellow;
+        }
+        .normal {
+            width: 85%;
+            height: 400px;
+            background-image: linear-gradient(to top right, rgba(152,34,23,0.5), white),
+            linear-gradient(to top left, rgba(120,115,52,0.5), black);
+        }
+
+        .angulo {
+            width: 85%;
+            height: 400px;
+            background-image: linear-gradient(45deg, blue, white),
+            linear-gradient(270deg, black, green);
+        }
+
+        .multicolor {
+            width: 85%;
+            height: 400px;
+            background-image: linear-gradient(to right, red 10%, yellow 15%, green 25%, blue 30%, white 45%, 
+            black 60%, pink 80%
+            , orange 95%);
+        }
+
+        .repetido {
+            width: 85%;
+            height: 400px;
+            background-image: repeating-linear-gradient(to right, white, green 5%, white 10%);
+        }
+
+        .radial {
+            width: 85%;
+            height: 400px;
+            background-image: radial-gradient(ellipse closest-side at 25% 50%, white, black, white, black, white, 
+            black, white, black, white, black);
+
+        }
+    </style>
+</head>
+<body>
+    <div class = "normal">
+
+    </div>
+    <div class = "angulo">
+
+    </div>
+    <div class = "multicolor">
+
+    </div>
+    <div class = "repetido">
+
+    </div>
+    <div class = "radial">
+
+    </div>
+    
+</body>
+</html>

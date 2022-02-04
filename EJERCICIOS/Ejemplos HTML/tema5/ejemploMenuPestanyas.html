@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ejemploPestanyas</title>
+    <style type = "text/css">
+        * {
+            box-sizing: border-box;
+        }
+
+        nav {
+            width: 85%;
+            margin: auto;
+        }
+
+        nav, main {
+            width: 85%;
+            margin: 0px auto;
+        }
+
+        nav ul {
+            list-style-type: none;
+            display: flex;
+            justify-content: space-between;
+            padding: 0px;
+            margin: 0px;
+        }
+
+        nav ul a {
+            text-decoration: none;
+            flex-grow: 1;
+            margin-right: 2px;
+
+        }
+
+        nav ul li {
+            background-color: red;
+            color: white;
+            text-align: center;
+            border-radius: 10px 10px 0px 0px;
+            padding: 15px;
+            
+        }
+
+        nav ul li:hover {
+            background-color: yellow;
+            color: black;
+        }
+
+        nav ul a:last-child {
+            margin-right: 0px;
+        }
+
+        main {
+            margin-top: 0;
+            border: red solid 2px;
+            border-top-width: 0;
+        }
+
+        main section {
+            display: none;
+        }
+
+        main section:target {
+            display: inherit;
+        }
+
+    </style>
+</head>
+<body>
+    <nav>
+        <ul>
+            <a href = "#primera"><li>Primero</li></a>
+            <a href = "#segunda"><li>Segundo</li></a>
+            <a href = "#tercera"><li>Tercero</li></a>
+            <a href = "#cuarta"><li>Cuarto</li></a>
+
+        </ul>
+    </nav>
+    <main>
+        <section id = "primera">PRIMERA Lorem ipsum dolor sit amet consectetur adipisicing elit. A perferendis maiores suscipit harum, commodi ducimus distinctio. Voluptatem accusamus quo alias. Eaque, odit autem vitae iste necessitatibus culpa veniam neque? Alias. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempore dolore accusamus dolorem laborum dignissimos. Molestiae nostrum tempora ut cumque rerum, iure voluptate fugit? Eos facilis, quae aliquam obcaecati ea delectus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium non quibusdam ipsa vero rem unde iste hic ea molestiae sunt quis sit labore natus, repellendus architecto inventore aut asperiores perferendis?</section>
+        <section id = "segunda">SEGUNDA Lorem ipsum dolor sit amet consectetur adipisicing elit. A perferendis maiores suscipit harum, commodi ducimus distinctio. Voluptatem accusamus quo alias. Eaque, odit autem vitae iste necessitatibus culpa veniam neque? Alias. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempore dolore accusamus dolorem laborum dignissimos. Molestiae nostrum tempora ut cumque rerum, iure voluptate fugit? Eos facilis, quae aliquam obcaecati ea delectus.</section>
+        <section id = "tercera">TERCERA Lorem ipsum dolor sit amet consectetur adipisicing elit. A perferendis maiores suscipit harum, commodi ducimus distinctio. Voluptatem accusamus quo alias. Eaque, odit autem vitae iste necessitatibus culpa veniam neque? Alias. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempore dolore accusamus dolorem laborum dignissimos. Molestiae nostrum tempora ut cumque rerum, iure voluptate fugit? Eos facilis, quae aliquam obcaecati ea delectus.</section>
+        <section id = "cuarta">CUARTA Lorem ipsum dolor sit amet consectetur adipisicing elit. A perferendis maiores suscipit harum, commodi ducimus distinctio. Voluptatem accusamus quo alias. Eaque, odit autem vitae iste necessitatibus culpa veniam neque? Alias. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempore dolore accusamus dolorem laborum dignissimos. Molestiae nostrum tempora ut cumque rerum, iure voluptate fugit? Eos facilis, quae aliquam obcaecati ea delectus.</section>
+    </main>
+    
+</body>
+</html>

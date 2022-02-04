@@ -1,0 +1,36 @@
+body {
+    background-image: url(../img/fondoCV.jpg);
+}
+h1 {
+    font-size: 5em;
+    text-align: center;
+    color: rgb(78, 78, 78);
+    
+    
+    
+    text-shadow: 5px 5px rgb(131, 99, 30);
+}
+
+ul {
+    text-align: center;
+    font-size: 2em;
+    list-style: none;
+    margin: 3px auto;
+}
+li {
+    text-align: center;
+    font-size: 0.9em;
+}
+.imagenCV {
+    border-radius: 200px;
+    text-align: center;
+}
+.fotoCentrada {
+    text-align: center;
+}
+h2 {
+    background-color: grey;
+}
+.formacion {
+    text-align: left;
+}

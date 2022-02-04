@@ -1,0 +1,88 @@
+* {
+    box-sizing: border-box;
+}
+
+@keyframes animaReloj {
+    from {
+        transform: rotate(0);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.reloj {
+    width: 500px;
+    height: 500px;
+    margin: 0 auto;
+    border-radius: 100%;
+    border: 10px solid black;
+    position: relative;
+    background-color: grey;
+}
+
+.reloj > div {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    margin: auto;
+}
+
+
+.cajaHoras {
+    width: 60%;
+    height: 60%;
+    animation: animaReloj 43200s infinite;
+}
+
+.cajaHoras:hover {
+    animation-play-state: paused;
+}
+
+.horas {
+    width: 10px;
+    height: 50%;
+    margin: 0 auto;
+    background-color: black;
+}
+
+
+.cajaMinutos {
+    height: 80%;
+    width: 80%;
+    animation: animaReloj 3600s infinite;
+}
+
+.cajaMinutos:hover {
+    animation-play-state: paused;
+}
+
+.minutos {
+    height: 50%;
+    width: 6px;
+    background-color: black;
+    margin: 0 auto;
+}
+
+
+.cajaSegundos {
+    width: 95%;
+    height: 95%;
+    animation: animaReloj 60s infinite steps(60, end);
+}
+
+.cajaSegundos:hover {
+    animation-play-state: paused;
+}
+
+.segundos {
+    width: 3px;
+    height: 50%;
+    background-color: red;
+    margin: 0 auto;
+}
+
+

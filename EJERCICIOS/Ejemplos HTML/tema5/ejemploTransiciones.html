@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ejemploTransiciones
+    </title>
+    <style type = "text/css">
+        div {
+            width: 85%;
+            background-color: white;
+            transition: all 0.4s;
+            border: red solid 2px;
+            height: 400px;
+        }
+
+        p {
+            font-size: 4em;
+        }
+
+        div p.pregunta {
+            visibility: visible;
+            transition: visibility;
+        }
+
+        div:hover p.pregunta {
+            visibility: hidden;
+        }
+
+        div p.respuesta {
+            visibility: hidden;
+            transition: visibility;
+        }
+
+        div:hover p.respuesta {
+            visibility: visible;
+            color: white;
+        }
+
+        div:hover {
+            width: 85%;
+            background-color: red;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <p class = "pregunta">¿Cómo se aprueba LMSGI?</p>
+        <p class = "respuesta">Usando flex wrap wrap wrapper</p>
+    </div>
+</body>
+</html>

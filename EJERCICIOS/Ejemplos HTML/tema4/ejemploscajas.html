@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejemplos cajas</title>
+    <style type = "text/css">
+        * {
+            box-sizing: border-box; 
+        }
+        div {
+            width: 400px;
+            height: 260px;
+            background-color: blue;
+            background-image: url(./img/fondo_jovenes.png), url(./img/fondo_trama.png);
+            background-repeat: no-repeat, repeat;
+            margin: auto;
+        }
+        h1 {
+            background-color: green;
+            width: 50%;
+            min-width: 500px;
+            max-width: 1200px;
+            padding: 5%;
+            border: solid red 25px;
+            border-radius: 20px;
+            margin: 50px auto;
+            text-align: center;
+        }
+        p {
+            
+            padding: 2%;
+            border: solid black 5px;
+            margin: 50px auto;
+            overflow: hidden;
+            flex-grow: 1;
+            
+            
+        }
+        .container {
+            border: 2px solid red;
+            width: 50%;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: flex-start;
+        }
+        #p1 {
+           
+           flex-basis: 5%;
+        }
+        #p2 {
+            
+            flex-basis: 34%;
+            align-self: flex-end;
+        }
+        #p3 {
+            
+            flex-basis: 25%;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>ESTE ES EL TÍTULO</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus, animi cum sint eaque exercitationem cumque labore, recusandae sapiente placeat quae numquam consequuntur explicabo! Corrupti velit fugit dolore ipsum unde! Necessitatibus.</p>
+    
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores iusto exercitationem voluptate itaque ullam, impedit voluptates optio, distinctio aperiam sed est! Itaque voluptatem eum dolore corrupti ea dignissimos quo blanditiis.</p>    
+    <header class = "container">
+        <p id = "p1">1º Frase</p>
+        <p id = "p2">Segunda Frase</p>
+        <p id = "p3">Terceraaaa Frase</p>
+    </header>
+</body>
+</html>

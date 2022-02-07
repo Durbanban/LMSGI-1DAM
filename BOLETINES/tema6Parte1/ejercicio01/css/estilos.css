@@ -1,0 +1,19 @@
+* {
+    box-sizing: border-box;
+}
+
+table {
+    margin: auto;
+    border-collapse: collapse;
+}
+
+table td {
+    height: 35px;
+    border: 2px solid black;
+    margin: 0;
+}
+
+.cabecera {
+    background-color: lightgrey;
+    border-bottom: 4px solid black;
+}

@@ -11,9 +11,29 @@ table td {
     height: 35px;
     border: 2px solid black;
     margin: 0;
+    width: 80px;
+    text-align: center;
 }
 
 .cabecera {
     background-color: lightgrey;
     border-bottom: 4px solid black;
+}
+
+table td:first-child {
+    width: 210px;
+}
+
+table td:last-child {
+    width: 140px;
+}
+
+td#izq {
+    text-align: left;
+}
+
+caption {
+    padding: 5px;
+    font-size: 1.3em;
+    font-weight: bold;
 }

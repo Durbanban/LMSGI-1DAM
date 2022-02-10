@@ -1,0 +1,26 @@
+* {
+    box-sizing: border-box;
+}
+
+caption {
+    caption-side: bottom;
+}
+
+table {
+    margin: auto;
+}
+
+td {
+    text-align: center;
+}
+
+td.fcb {
+    background-image: url(../media/equipos/fcb.png);
+    width: 25px;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+
+
+

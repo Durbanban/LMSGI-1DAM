@@ -5,13 +5,20 @@
 caption {
     caption-side: bottom;
 }
+caption div.container {
+    display: flex;
+    background-color: burlywood;
+    height: 50px;
+}
 
 table {
     margin: auto;
+    border-collapse: collapse;
 }
 
 td {
     text-align: center;
+    padding: 5px;
 }
 
 td.fcb {
@@ -20,6 +27,169 @@ td.fcb {
     background-size: contain;
     background-repeat: no-repeat;
 }
+
+td.atm {
+    background-image: url(../media/equipos/atm.png);
+    width: 25px;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+td.rma {
+    background-image: url(../media/equipos/rma.png);
+    width: 25px;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+td.sfc {
+    background-image: url(../media/equipos/sfc.png);
+    width: 25px;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+td.get {
+    background-image: url(../media/equipos/get.png);
+    width: 25px;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+td.ala {
+    background-image: url(../media/equipos/ala.png);
+    width: 25px;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+td.rso {
+    background-image: url(../media/equipos/rso.png);
+    width: 25px;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+td.bet {
+    background-image: url(../media/equipos/bet.png);
+    width: 25px;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+td.val {
+    background-image: url(../media/equipos/val.png);
+    width: 25px;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+td.cad {
+    background-image: url(../media/equipos/cad.png);
+    width: 25px;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+td.lev {
+    background-image: url(../media/equipos/lev.png);
+    width: 25px;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+td.gra {
+    background-image: url(../media/equipos/gra.png);
+    width: 25px;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+td.esp {
+    background-image: url(../media/equipos/esp.png);
+    width: 25px;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+td.ath {
+    background-image: url(../media/equipos/ath.png);
+    width: 25px;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+td.mll {
+    background-image: url(../media/equipos/mll.png);
+    width: 25px;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+td.osa {
+    background-image: url(../media/equipos/osa.png);
+    width: 25px;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+td.cel {
+    background-image: url(../media/equipos/cel.png);
+    width: 25px;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+td.vil {
+    background-image: url(../media/equipos/vil.png);
+    width: 25px;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+td.rva {
+    background-image: url(../media/equipos/rva.png);
+    width: 25px;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+td.elc {
+    background-image: url(../media/equipos/elc.png);
+    width: 25px;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+tbody>td:first-child {
+    border-left: rgba(50, 50, 50, 0.521) solid 3px;
+}
+
+td.ucl {
+    border-left: green solid 3px;
+}
+
+td.uel {
+    border-left: rgb(212, 198, 2) solid 3px;
+}
+
+td.septimo {
+    border-left: darkorange solid 3px;
+}
+
+td.descenso {
+    border-left: red solid 3px;
+}
+
+table>tbody>tr:nth-child(odd) {
+    background-color: rgba(128, 128, 128, 0.301);
+}
+
+.bordeCabecera {
+    border-bottom: red solid 2px;
+    border-top: black solid 2px;
+}
+
 
 
 

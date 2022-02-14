@@ -161,10 +161,6 @@ td.elc {
     background-repeat: no-repeat;
 }
 
-tbody>td:first-child {
-    border-left: rgba(50, 50, 50, 0.521) solid 3px;
-}
-
 td.ucl {
     border-left: green solid 3px;
 }
@@ -183,6 +179,15 @@ td.descenso {
 
 table>tbody>tr:nth-child(odd) {
     background-color: rgba(128, 128, 128, 0.301);
+}
+
+table>tbody>tr:hover {
+    background-color: grey;
+}
+
+table>tbody>tr>td:hover {
+    background-color: darkslategrey;
+    color: white;
 }
 
 .bordeCabecera {

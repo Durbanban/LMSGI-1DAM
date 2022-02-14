@@ -171,15 +171,11 @@ td.elc {
     background-repeat: no-repeat;
 }
 
-<<<<<<< HEAD
-td.ucl {
-=======
 tbody>tbody>td:first-child {
     border-left: rgba(50, 50, 50, 0.521) solid 3px;
 }
 
 .ucl {
->>>>>>> 9cf523fbcb3dff584a751caa4a7c5daee19fcf4b
     border-left: green solid 3px;
 }
 

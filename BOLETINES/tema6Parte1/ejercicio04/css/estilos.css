@@ -7,13 +7,23 @@ caption {
 }
 caption div.container {
     display: flex;
-    background-color: burlywood;
     height: 50px;
+    flex-direction: row;
+    font-size: 0.8em;
+    flex-wrap: wrap;
+}
+
+div.container>div {
+    height: 40%;
+    margin: 10px;
+    padding-left: 5px;
 }
 
 table {
     margin: auto;
     border-collapse: collapse;
+    border-bottom: rgba(50, 50, 50, 0.521) solid 3px;
+
 }
 
 td {
@@ -161,11 +171,19 @@ td.elc {
     background-repeat: no-repeat;
 }
 
+<<<<<<< HEAD
 td.ucl {
+=======
+tbody>tbody>td:first-child {
+    border-left: rgba(50, 50, 50, 0.521) solid 3px;
+}
+
+.ucl {
+>>>>>>> 9cf523fbcb3dff584a751caa4a7c5daee19fcf4b
     border-left: green solid 3px;
 }
 
-td.uel {
+.uel {
     border-left: rgb(212, 198, 2) solid 3px;
 }
 
@@ -173,7 +191,7 @@ td.septimo {
     border-left: darkorange solid 3px;
 }
 
-td.descenso {
+.descenso {
     border-left: red solid 3px;
 }
 
@@ -194,6 +212,13 @@ table>tbody>tr>td:hover {
     border-bottom: red solid 2px;
     border-top: black solid 2px;
 }
+
+table>tbody>tr:hover {
+    background-color: darkslategrey;
+    color: white;
+}
+
+
 
 
 

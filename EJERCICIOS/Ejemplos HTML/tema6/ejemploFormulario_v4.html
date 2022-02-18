@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejemplo de formularios 2</title>
+    <style type = "text/css">
+        * {
+            box-sizing: border-box;
+        }
+
+        #enviar {
+            width: 50px;
+        }
+
+        fieldset {
+            border: 2px solid red;
+            background-color: lightcoral;
+            width: 50%;
+            box-shadow: 5px 5px 10px blueviolet;
+        }
+        legend {
+            /*Esto es un poco chapuza para que coincida el borde rojo*/
+            position: relative;
+            top: -9px;
+            border-bottom: 2px solid red; 
+        }
+
+
+    </style>
+</head>
+<body>
+     <form name = "tuvieja"  enctype = "multipart/form-data">
+        <label for = "nombre">Nombre</label>
+        <input type = "text" name = "nombre" id = "nombre" size = "5" maxlength = "10" pattern = "[A-Za-z]{3,20}"></br>
+        <label for = "apellido1">Primer apellido</label>
+        <input type = "text" name = "apellido1" id = "apellido1"></br>
+        <label for = "apellido2">Segundo apellido</label> 
+        <input type = "text" name = "apellido2" id = "apellido2" placeholder = "p.e. Durbán"></br>
+        <label for = "genero">Género</label><br>
+        <input type = "radio" name = "genero" value = "M">Masculino<br>
+        <input type = "radio" name = "genero" value = "F">Femenino<br>
+        <input type = "radio" name = "genero" value = "N" checked>No procede<br>
+        <label for = "intereses">Intereses</label><br>
+        <label for = "programar"></label>
+        <input type = "checkbox" name = "programar" value = "P" checked>Programar<br>
+        <label for = "videojugar"></label>
+        <input type = "checkbox" name = "videojugar" value = "V">Jugar a videojuegos<br>
+        <label for = "videotuto"></label>
+        <input type = "checkbox" name = "videotuto" value = "VT">Hacer videotutoriales<br>
+        <br>
+        <!--<label for = "tuvida">Cuéntame tu vida</label>-->
+        <textarea name = "tuvida" cols = "50" rows = "5" autofocus placeholder = "Cuéntame tu vida"></textarea><br>
+        <!--<input type = "submit" name = "enviar" value = "Sansacabó">-->
+        <label for = "provincia">Provincia</label>
+        <select name = "provincia" multiple size = "4">
+            <option value = ""></option>
+            <option value = "SE" selected>Sevilla</option>
+            <option value = "HU">Huelva</option>
+            <option value = "CA">Cádiz</option>
+            <option value = "MA">Málaga</option>
+            <option value = "AL">Almería</option>
+            <option value = "JA">Jaén</option>
+            <option value = "CO">Córdoba</option>
+            <option value = "GRA">Granada</option>
+        </select><br>
+        <input type = "hidden" name = "codUsuario" value = "lsjdlf"><br>
+        <fieldset>
+            <legend>Datitos personales</legend>
+            <label for = "foto">Añada su foto</label>
+            <input type = "file" name = "foto" id = "foto" accept = "image/*"><br>
+            <label for = "passw">Contraseña</label>
+            <input type = "password" name = "passw"><br>
+            <label for = "repitapassw">Repita la contraseña</label>
+            <input type = "password" name = "passw"><br>
+            <input id = "enviar" type = "image" name = "enviar" src = "../../../BOLETINES/tema5/ejercicio07/media/shooter.png"><br>
+            <input type = "reset" name = "borrar" value = "A shuparla hermano">
+        </fieldset><br>
+        <label for = "color">Elija un color</label><br>
+        <input type = "color" name = "color"><br>
+        <label for = "numero">Indique un número</label>
+        <input type = "number" name = "numero" id= "numero" min = "0" max = "99" step = "5"><br>
+        <input type = "text" name = "fruta" id = "fruta" list = "opciones"><br>
+        <datalist id = "opciones">
+            <option value = "Pera"></option>
+            <option value = "Manzana"></option>
+            <option value = "Naranja"></option>
+            <option value = "Mandarina"></option>
+            <option value = "Dátiles"></option>
+        </datalist>
+        <label for = "hora">Hora de Recogida</label>
+        <input type = "datetime-local" name = "hora" id = "hora" min = "19:00" max = "24:00" step = "900"></br>
+        <input type = "range" min = "1" max = "10">
+    </form>
+</body>
+</html>

@@ -1,3 +1,58 @@
 * {
     box-sizing: border-box;
 }
+
+form {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    margin: auto;
+}
+
+h2 {
+    text-align:initial;
+}
+
+.requerido {
+    color: red;
+}
+
+fieldset div{
+    display: flex;
+    flex-direction: column;
+}
+
+fieldset:hover {
+    background-color: #FF9;
+}
+
+input:focus {
+    outline: solid 3px #E6B700;
+}
+
+div.wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+div.wrapper>p {
+    visibility: hidden;
+    
+}
+
+div.wrapper:hover>p {
+    visibility: visible;
+}
+
+div.wrapper>div {
+   flex-wrap: wrap;
+   margin: 10px;
+}
+
+fieldset.alta {
+    display: flex;
+    justify-content: flex-end;
+    border: none;
+}

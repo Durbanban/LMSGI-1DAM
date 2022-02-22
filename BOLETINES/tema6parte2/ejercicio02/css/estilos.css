@@ -6,3 +6,24 @@ form {
     margin: auto;
     width: 20%; 
 }
+
+input {
+    margin: 10px;
+}
+
+input[type = "checkbox"] {
+    margin: 9px;
+}
+
+input[type = "checkbox"]:checked+label {
+    color: chocolate;
+}
+
+input:focus {
+    outline: chocolate solid 3px;
+}
+
+input[type = "image"] {
+    width: 50px;
+    margin-left: 40%;
+}

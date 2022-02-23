@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<title>NoMePongoEsoNiLoc@</title>
+		<meta charset="UTF-8">
+		<link href="https://fonts.googleapis.com/css?family=Lacquer&display=swap" rel="stylesheet">
+	</head>
+	<style type="text/css">
+		/*	COLORES: ;
+				- Fondo general:  #FF6F61;
+				- Fondos naranjas: #FE840E;
+				- Amarillos:  yellow;
+				- Blancos:  white;
+				- Azul:  blueviolet;
+
+			FUENTE:  Lacquer (está incluida a través de la etiqueta link);
+		*/
+
+		* {
+			box-sizing: border-box;
+		}
+
+		body {
+			background-color: #FF6F61;
+		}
+
+		
+		@font-face {
+			font-family: 'Lacquer';
+			font-style: normal;
+			font-weight: 400;
+			font-display: swap;
+			src: url(https://fonts.gstatic.com/s/lacquer/v13/EYqzma1QwqpG4_BBN7iKXw.woff2) format('woff2');
+			unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+		}
+		h1 {
+			font-family: 'Lacquer', Arial, Helvetica, sans-serif;
+			text-align: center;
+		}
+		
+		h2 {
+			font-family: 'Lacquer', Arial, Helvetica, sans-serif;
+			text-align: center;
+		}
+		
+		div.wrapper {
+			background-color: #FE840E;
+			color: white;
+			width: 70%;
+			border: yellow solid 3px;
+			margin: auto;			
+			padding: 10px;
+		}
+
+		fieldset {
+			border: yellow solid 1px;
+		}
+
+		div.wrapper>fieldset>div {
+			display: flex;
+			flex-direction: row;
+			
+			
+		}
+
+		div.wrapper>fieldset>div>div {
+			margin: 10px;
+			display: flex;
+			flex-direction: column;
+		}
+
+		div.wrapper2 {
+			display: flex;
+			
+		}
+
+		input:focus {
+			outline: yellow solid 2px;
+		}
+
+		table {
+			width: 65%;
+			text-align: center;
+			margin: auto;
+			border: yellow solid 3px;
+		}
+
+		table tr {
+			border: yellow solid 2px;
+		}
+
+		caption {
+			font-size: 1.5em;
+			font-family: 'Lacquer', Arial, Helvetica, sans-serif;
+		}
+
+		thead>th {
+			
+		}
+
+
+
+	</style>
+	<body>
+		<h1>NoMePongoEsoNiLoc@</h1>
+		<h2>Alquiler online de disfraces</h2>
+		<form>
+			<div class = "wrapper">
+				<fieldset>
+					<legend>Elija su disfraz</legend>
+					<label for = "alquiler">¿Qué tipo de alquiler desea?</label>
+					<select name = "alquiler" size = "1" required>
+						<option value = "C" selected>Completo</option>
+						<option value = "M">Máscara</option>
+						<option value = "T">Traje</option>
+					</select></br>					
+					<label for = "genero">Indique su género</label>
+					<input type = "radio" name = "genero" value = "H" required>Hombre
+					<input type = "radio" name = "genero" value = "M" required>Mujer
+					<input type = "radio" name = "genero" value = "NB" required>No binario</br>
+					<label for = "fechaInicio">Inicio de la reserva</label>
+					<input type="datetime-local" name = "fechaInicio" id = "fechaInicio">
+					<label for = "fechaFin">Fin de la reserva</label>
+					<input type="datetime-local" name = "fechaFin" id = "fechaFin"></br>
+					<label for = "tematica">¿Qué temática de disfraz desea alquilar?</label></br>
+					<div>
+						<div>
+							<div>
+								<input type="checkbox">Animales
+							</div>
+							<div>
+								<input type="checkbox">Profesiones
+							</div>
+							<div>
+								<input type="checkbox">Deportes
+							</div>
+						</div>
+						<div>
+							<div>
+								<input type="checkbox">Plantas
+							</div>
+							<div>
+								<input type="checkbox">Personajes de películas
+							</div>
+							<div>
+								<input type="checkbox">Personajes de libros
+							</div>
+						</div>
+						<div>
+							<div>
+								<input type="checkbox">Personajes de dibujos animados
+							</div>
+							<div>
+								<input type="checkbox">Personajes históricos
+							</div>
+							<div>
+								<input type="checkbox">Objetos cotidianos
+							</div>
+						</div>
+						<div>
+							<div>
+								<input type="checkbox">Vehículos
+							</div>
+							<div>
+								<input type="checkbox">Otras culturas
+							</div>
+							<div>
+								<input type="checkbox">Inclasificables
+							</div>
+						</div>
+					</div>
+					
+					<label for = "peticiones">¿Desea indicarnos alguna petición especial?</label></br>
+					<textarea name = "peticiones" cols = "50" rows = "5"></textarea>
+				</fieldset>
+				<div class = "wrapper2">
+					<fieldset>
+						<legend>Indique sus datos personales</legend>
+						<label for = "nombre">Nombre y apellidos</label>
+						<input type="text" name = "nombre" id = "nombre" required>
+						<label for="correo"required>Correo Electrónico</label>
+						<input type="email" name="correo" id="correo" required><br><br>
+						<label for="codpostal">Código Postal</label>
+						<input type="text" name="codpostal" id="codpostal" maxlength="5" size="5" pattern="[0-9]{5}" required placeholder="41024"><br><br>
+						<label for="tlf">Teléfono de contacto</label>
+						<input type="text" name="tlf" id="tlf" maxlength="9" size="9" pattern="[0-9]{9}" required placeholder="954123123"><br>
+
+					</fieldset>
+					<fieldset>
+						<legend>Indique sus datos de pago</legend>
+						<label for="tarjeta">Número de tarjeta</label>
+						<input type="" name="tarjeta" id="tarjeta" maxlength="16" size="16" pattern="[0-9]{16}"required placeholder="16 cifras sin espacios"><br><br>
+						<label for="fcad">Fecha de Caducidad</label>
+						<input type="text" name="fcad" id="fcad"><br><br>
+						<label for="ccv">Código de Seguridad (CCV)</label>
+						<input type="text" name="ccv" id="ccv" maxlength="3" size="3" pattern="[0-9]{3}" required placeholder="123"><br><br>
+					</fieldset>
+				</div>
+				
+				<p>
+					<input type="" value="Solicitar Reserva">
+					<input type="" value="Borrar datos">
+				</p>
+			</div>
+		</form>
+
+		<hr />
+
+		<table>
+			<caption>Tarifas 2022</caption>
+			<thead>
+				<th>Categoría</th>
+				<th>Traje</th>
+				<th>Máscara</th>
+				<th>Completo</th>
+			</thead>
+			<tbody>
+				<tr>
+					<td>Animales, plantas, objetos</td>
+					<td>15€</td>
+					<td>15€</td>
+					<td>25€</td>
+				</tr>
+				<tr>				
+					<td>Personas y personajes</td>
+					<td>10€</td>
+					<td>10€</td>
+					<td>15€</td>
+				</tr>
+				<tr>				
+					<td>Vehículos</td>
+					<td>15€</td>
+					<td>15€</td>
+					<td>25€</td>
+				</tr>
+				<tr>				
+					<td>Inclasificables</td>
+					<td>20€</td>
+					<td>20€</td>
+					<td>35€</td>
+				</tr>
+				<tr>				
+					<td>Envío</td>
+					<td>Península: 10€.</td>
+					<td></td>			
+					<td></td>
+				</tr>
+				<tr>				
+					<td>Otros destinos: consultar</td>			
+					<td></td>			
+					<td></td>			
+					<td></td>	
+				</tr>
+			</tbody>		
+			<tfoot>
+				<td>NOTA: Todos los precios son por día de alquiler, incluyen IVA, servicio de limpieza y desinfección. Envío no incluido</td>
+				<td></td>			
+				<td></td>			
+				<td></td>	
+			</tfoot>		
+			
+			
+		</table>
+	</body>
+</html>

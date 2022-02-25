@@ -7,6 +7,29 @@
     <link rel = "stylesheet" type = "text/css" href = "css/estilos.css">
 </head>
 <body>
-    
+    <h1>Bienvenido al <strong>HTM</strong>ote<strong>L</strong></h1>
+   <form name = "registro"  enctype = "multipart/form-data">
+        <label for = "huespedes">Número de huéspedes</label>
+        <input type = "number" name = "huespedes" id = "huespedes" min = "1" max = "7">
+        <label for = "entrada">Fecha de entrada</label>
+        <input type = "date" name = "entrada" id = "entrada">
+        <label for = "salida">Fecha de salida</label>
+        <input type = "date" name = "salida" id = "salida">
+        <label for = "habitacion">Tipo de habitación</label>
+        <input type = "text" name = "habitacion" id = "habitacion" list = "tipos">
+        <datalist id = "tipos">
+            <option value = "Simple"></option>
+            <option value = "Doble"></option>
+            <option value = "Suite"></option>
+            <option value = "Exterior"></option>
+            <option value = "Fumadores"></option>
+        </datalist>
+        <label for = "correo">Correo electrónico</label>
+        <input type = "email" name = "correo" id = "correo" maxlength = "320">
+        <div></div>
+        <div></div>
+
+        
+   </form> 
 </body>
 </html>

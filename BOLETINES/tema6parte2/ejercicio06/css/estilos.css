@@ -39,6 +39,10 @@ div.wrapper {
 
 div.wrapper>p {
     visibility: hidden;
+    position: relative;
+    left: 20px;
+    bottom: 20px;
+    width: 100px;
     
 }
 
@@ -47,7 +51,7 @@ div.wrapper:hover>p {
 }
 
 div.wrapper>div {
-   flex-wrap: wrap;
+   display: flex;
    margin: 10px;
 }
 
@@ -56,3 +60,8 @@ fieldset.alta {
     justify-content: flex-end;
     border: none;
 }
+
+div.wrapper>div>div {
+    display: flex;
+}
+

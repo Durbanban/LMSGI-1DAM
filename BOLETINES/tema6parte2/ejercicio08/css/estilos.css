@@ -1,3 +1,41 @@
 * {
     box-sizing: border-box;
 }
+
+body {
+    background-image: linear-gradient(to bottom right, chocolate, blanchedalmond);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+h1 {
+    color: blanchedalmond;
+    text-shadow: black 2px 2px;
+    font-size: 3em;
+    text-align: center;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    margin: auto;
+}
+
+strong {
+    font-size: 1.5em;
+}
+
+div {
+    width: 750px;
+    height: 350px;
+    background-image: url(../media/hotel1.jpg);
+    background-size: cover;
+    margin-top: 40px;
+
+}
+
+div+div {
+    background-image: url(../media/hotel2.jpg);
+    background-size: cover;
+}

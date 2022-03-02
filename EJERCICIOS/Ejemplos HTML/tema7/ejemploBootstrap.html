@@ -19,11 +19,16 @@
             color: red;
         }
 
+        .bg-warning {
+            background-color: fuchsia!important; 
+            /* Se puede redefinir las clases de bootstrap (necesario el !important si la clase tenía esa propiedad)*/
+        }
+
     </style>
 </head>
 <body>
-    <h1>HOLA hola bootstrap</h1>
-    <h2>PERO PERO PERO</h2>
+    <h1 class = "display-1 text-success bg-warning border border-5 border-dark rounded-pill w-50 mx-auto mt-2 ps-5">HOLA hola <small>bootstrap</small></h1>
+    <h2 class = "display-2">PERO PERO PERO</h2>
     <ul>
         <li>Primero</li>
         <li>Segundo</li>

@@ -1,0 +1,1 @@
+alert("La programación es mi pasión"); alert("Tu vieja"); // Los alert son los equivalentes a los sysos en java.

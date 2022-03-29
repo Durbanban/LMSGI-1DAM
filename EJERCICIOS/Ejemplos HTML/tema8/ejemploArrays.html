@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejemplo Arrays</title>
+    <script>
+        let array = [2, 4, 5, 6, 8];
+        let array2 = ["hola", "caracola"];
+        let arrayConcatenado;
+        alert(array.length);
+        array[34] = 23; // El .length, no determina el número de variables que haya, sino que es el índice más grande +1.
+        alert(array.length);
+        arrayConcatenado = array.concat(array2);
+        alert(arrayConcatenado);
+        array.splice(0, 2, 10);
+        alert(array);
+        array2.splice(1, 0, "holita", "vecinito");
+        alert(array2);
+        alert(array.indexOf(5));
+    </script>
+</head>
+<body>
+    <h1>EJEMPLO CON ARRAYS</h1>
+    <h2>.concat() encadena dos arrays.</h2>
+    <h2>.pop() selecciona el último elemento de un array y lo saca.</h2>
+    <h2>.push() mete un elemento al final del array.</h2>
+    <h2>Siempre es bueno usar pop y push para quitar y poner elementos a un array.</h2>
+    <h2>.shift() selecciona el primer elemento de un array y lo saca.</h2>
+    <h2>.unshift() mete un elemento al inicio del array.</h2>
+    <h2>.reverse() coge un array e invierte el orden de los elementos.</h2>
+    <h2>.splice(inicio posición, cuantos argumentos quitas, cuantos argumentos añades).</h2>
+    <h2>.indexOf() devuelve el primer índice para el objeto que se le pase.</h2>
+    <h2>.lastIndexOf() devuelve el último índice para el objeto que se le pase.</h2>
+
+</body>
+</html>

@@ -9,25 +9,16 @@ while (arrayNum.length < tope) {
 alert(arrayNum);
 
 function ordenarArray (array) {
-    let mayor, menor;
-
     for (let i = 0; i < array.length; i++) {
-        if (array[i] <= array[i+1]) {
-            mayor = array[i+1];
-            menor = array[i];
-            array.splice(i, 1);
-            array.push(menor);
-        }
-
-        
+        for (let j = i+1; j < array.length; j++) {
+            if (array[i] < array[j]) {
+                [array[i], array[j]] = [array[j], array[i]];
+            }
+        }        
     }
+    alert(array);
     
 }
 
 ordenarArray(arrayNum);
 alert("Array ordenado: " + arrayNum);
-
-
-
-
-

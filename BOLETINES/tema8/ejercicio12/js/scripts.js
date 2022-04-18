@@ -3,10 +3,14 @@ let tope = +prompt("¿Cuántos números quiere en el array?");
 let num;
 while (arrayNum.length < tope) {
     num = +prompt("Introduzca un número");
-    arrayNum.push(num);
+    if (isFinite(num)){
+        arrayNum.push(num);
+    }else {
+        alert ("Por favor, introduzca un número válido");
+    }
 };
 
-alert(arrayNum);
+alert("Array desordenado: " + arrayNum);
 
 function ordenarArray (array) {
     for (let i = 0; i < array.length; i++) {
@@ -16,8 +20,6 @@ function ordenarArray (array) {
             }
         }        
     }
-    alert(array);
-    
 }
 
 ordenarArray(arrayNum);

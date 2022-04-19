@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Método mágico JS</title>
+</head>
+<body>
+    <h1>LOREMEME ipsum</h1>
+    <p id = "primero">Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus eligendi cupiditate nesciunt modi debitis labore optio. Eveniet voluptate, saepe repellendus officia aut perferendis, in fugit sunt dicta, necessitatibus eos. Vero?</p>
+    <p id = "segundo">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Molestiae delectus officia assumenda! Omnis facere voluptatem quaerat itaque <strong>incidunt praesentium</strong>, aliquam consectetur voluptatibus nisi pariatur corporis nam reiciendis iusto repudiandae modi?</p>
+    <p id = "tercero">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatum quia magnam ipsa eum blanditiis fugiat at dicta suscipit sunt, atque quae possimus nobis modi nisi laborum culpa dolorem! Minima, necessitatibus!</p>
+    <p id = "cuarto">Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus eligendi cupiditate nesciunt modi debitis labore optio. Eveniet voluptate, saepe repellendus officia aut perferendis, in fugit sunt dicta, necessitatibus eos. Vero?</p>
+    <p id = "quinto">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Molestiae delectus officia assumenda! Omnis facere voluptatem quaerat itaque incidunt praesentium, aliquam consectetur voluptatibus nisi pariatur corporis nam reiciendis iusto repudiandae modi?</p>
+    <p id = "sexto">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatum quia magnam ipsa eum blanditiis fugiat at dicta suscipit sunt, atque quae possimus nobis modi nisi laborum culpa dolorem! Minima, necessitatibus!</p>
+</body>
+<script type = "text/javascript"> // Para que el script de js haga efecto en el documento html, debe ir debajo de dicho documento.
+    let primerParrafo = document.getElementById("primero"); //Asigno a primerParrafo el elemento con el id "primero".
+    let segundoParrafo = document.getElementById("segundo"); //Asigno a segundoParrafo el elemento con el id "segundo".
+    primerParrafo.innerHTML = prompt("Indique el párrafo"); // innerHTML te muestra el contenido del elemento del documento. Con el prompt le cambio el contenido al párrafo cuyo id está asignado a primerParrafo.
+    alert(primerParrafo.innerHTML); // Muestro por pantalla el contenido del párrafo gracias a innerHTML
+    alert(segundoParrafo.innerHTML); // Lo mismo pero con el segundo párrafo (la etiqueta <strong></strong> queda igual que en el párrafo)
+    let negrita = document.querySelector("#segundo strong").innerHTML; // Con querySelector se elige el elemento usando selectores CSS. En este caso quiero que a la variable negrita le asigno el contenido de la etiqueta strong del párrafo con id "segundo". Para que me muestre por pantalla su contenido y no su dirección de memoria, lo encadeno con innerHTML.
+    alert(negrita); // Muestro por pantalla la variable negrita.
+</script>
+</html>

@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Método mágico JS</title>
+    <title>QuerySelector</title>
 </head>
 <body>
     <h1>LOREMEME ipsum</h1>
@@ -14,7 +14,7 @@
     <p id = "quinto">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Molestiae delectus officia assumenda! Omnis facere voluptatem quaerat itaque incidunt praesentium, aliquam consectetur voluptatibus nisi pariatur corporis nam reiciendis iusto repudiandae modi?</p>
     <p id = "sexto">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatum quia magnam ipsa eum blanditiis fugiat at dicta suscipit sunt, atque quae possimus nobis modi nisi laborum culpa dolorem! Minima, necessitatibus!</p>
 </body>
-<script type = "text/javascript"> // Para que el script de js haga efecto en el documento html, debe ir debajo de dicho documento.
+<!--<script type = "text/javascript"> // Para que el script de js haga efecto en el documento html, debe ir debajo de dicho documento.
     let primerParrafo = document.getElementById("primero"); //Asigno a primerParrafo el elemento con el id "primero".
     let segundoParrafo = document.getElementById("segundo"); //Asigno a segundoParrafo el elemento con el id "segundo".
     primerParrafo.innerHTML = prompt("Indique el párrafo"); // innerHTML te muestra el contenido del elemento del documento. Con el prompt le cambio el contenido al párrafo cuyo id está asignado a primerParrafo.
@@ -22,5 +22,17 @@
     alert(segundoParrafo.innerHTML); // Lo mismo pero con el segundo párrafo (la etiqueta <strong></strong> queda igual que en el párrafo)
     let negrita = document.querySelector("#segundo strong").innerHTML; // Con querySelector se elige el elemento usando selectores CSS. En este caso quiero que a la variable negrita le asigno el contenido de la etiqueta strong del párrafo con id "segundo". Para que me muestre por pantalla su contenido y no su dirección de memoria, lo encadeno con innerHTML.
     alert(negrita); // Muestro por pantalla la variable negrita. ESto no es buena idea, es mejor quedarte con el objeto completo.
+</script>-->
+<script type = "text/javascript">
+    let parrafos = document.querySelectorAll("p"); //Asignamos un array a parrafos, compuesto de todos los elementos de etiqueta <p>.
+    let negrita = parrafos.querySelectorAll("strong");
+    let muestraNegrita = "";
+    for (let n of negrita) {
+        muestraNegrita = n;
+    }
+    alert(muestraNegrita.innerHTML);
+    for (let p of parrafos) {
+        p.innerHTML = prompt("Dime el contenido: "); //Elegimos el contenido de cada párrafo guardado en el array parrafos.
+    }
 </script>
 </html>

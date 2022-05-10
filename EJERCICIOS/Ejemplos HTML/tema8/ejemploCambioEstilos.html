@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <title>Cambio de estilos con js</title>
+</head>
+<body>
+    <h1>Mis primeros scripts con DOM</h1>
+    <a class = "btn btn-primary ms-4" href = "#">Enlace</a>
+</body>
+<script type = "text/javascript">
+    let enlace = document.querySelector("a");
+    alert(enlace.className);
+    enlace.className = "btn btn-success ms-4";
+    //Machaca todas las clases, no conviene usarlo.
+    alert(enlace.className);
+    //Método que te aplica la clase si no la tiene el elemento, pero que te la quita si el elemento la tiene. 
+    for(i=0;i<11;i++) {
+        enlace.classList.toggle("d-none");
+        alert(enlace.className);
+        enlace.classList.toggle("d-none");
+        alert(enlace.className);
+    }
+</script>
+</html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <title>Eventos</title>
+    <style type = "text/css">
+        p {
+            height: 500px;
+        }
+        .sticky {
+            position: sticky;
+            top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Gestion de eventos</h1>
+    <div class = "btn btn-danger d-block w-25 mx-auto my-5">Volver arriba</div>
+
+    <input type="text" name="nombre" id="nombre" class="d-block mx-auto"><span id="textoError" class="d-none text-danger">El nombre no es correcto</span>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae, repellat sapiente laboriosam voluptas distinctio totam sit optio vitae necessitatibus sint dicta, ad quam quidem aut, incidunt ullam impedit accusamus commodi.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas, doloribus odit beatae necessitatibus nobis alias? Nulla tenetur quos fugiat, optio dolores magnam quasi ea quidem, pariatur, deserunt expedita iste consectetur.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem suscipit expedita minima omnis explicabo, harum reprehenderit optio et necessitatibus consectetur fugiat deserunt debitis magni quisquam est aperiam ad vero dolores.</p>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Placeat sint similique facere at? Quidem saepe itaque ut laborum, quisquam assumenda consequatur nesciunt non officiis aliquam delectus dolorem dicta et ullam!</p>
+</body>
+<script>
+    let boton = document.querySelector("div");
+    boton.addEventListener("click", cambioColor);
+    let campo = document.getElementById("nombre");
+    campo.addEventListener("blur", validarNombre);
+    let rueda = document.querySelector("div");
+    rueda.addEventListener("scroll", hacerSticky);
+    function cambioColor(evento) {
+        evento.currentTarget.classList.toggle("btn-danger");    
+        evento.currentTarget.classList.toggle("btn-success");
+    }
+    function hacerSticky(evento) {
+        evento.currentTarget.classList.add("sticky");
+    }
+    function validarNombre(evento) {
+        if(!evento.currentTarget.value.isNaN()){
+            let textoError = document.getElementById("textoError");
+            textoError.classList.remove("d-none");
+        }
+    }
+</script>
+</html>
